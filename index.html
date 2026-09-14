@@ -2,100 +2,322 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TX Digital Twin | Chilquinta</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TX Digital Twin | Chilquinta Transmisión</title>
 
 <style>
-body{
+
+:root{
+--azul:#003B71;
+--naranjo:#F58220;
+--gris:#f5f7fb;
+--texto:#1f2937;
+--blanco:#ffffff;
+}
+
+*{
 margin:0;
-font-family:Segoe UI,Arial,sans-serif;
-background:#0f172a;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Segoe UI, Arial, sans-serif;
+background:var(--gris);
+color:var(--texto);
+}
+
+/* Navegación */
+
+nav{
+background:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+nav img{
+height:45px;
+}
+
+.menu{
+display:flex;
+gap:25px;
+}
+
+.menu a{
+text-decoration:none;
+color:var(--azul);
+font-weight:600;
+}
+
+/* Hero */
+
+.hero{
+background:
+linear-gradient(
+rgba(0,59,113,0.75),
+rgba(0,59,113,0.75)
+),
+url("assets/baron.JPG");
+
+background-size:cover;
+background-position:center;
+
+min-height:650px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px;
 color:white;
 }
 
-header{
-background:linear-gradient(135deg,#0f172a,#1e3a8a);
-padding:80px 20px;
-text-align:center;
+.hero-content{
+max-width:900px;
 }
 
-h1{
-font-size:48px;
-margin-bottom:10px;
+.hero h1{
+font-size:70px;
+margin-bottom:20px;
 }
 
-.subtitle{
-font-size:20px;
-opacity:.8;
+.hero p{
+font-size:24px;
+line-height:1.7;
+margin-bottom:30px;
 }
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+border-radius:10px;
+font-weight:bold;
+text-decoration:none;
+margin:5px;
+transition:.3s;
+}
+
+.btn-primary{
+background:var(--naranjo);
+color:white;
+}
+
+.btn-secondary{
+border:2px solid white;
+color:white;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+}
+
+/* Contenedor */
 
 .container{
-width:90%;
 max-width:1200px;
 margin:auto;
+padding:60px 20px;
 }
 
-.section{
-padding:40px 0;
-}
-
-.card{
-background:#1e293b;
-border-radius:20px;
-padding:25px;
-margin-bottom:20px;
-box-shadow:0 5px 20px rgba(0,0,0,.3);
-}
-
-.button{
-display:inline-block;
-background:#2563eb;
-color:white;
-padding:12px 24px;
-border-radius:12px;
-text-decoration:none;
-font-weight:bold;
-}
-
-.button:hover{
-background:#3b82f6;
-}
+/* Indicadores */
 
 .stats{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
+margin-top:-70px;
 }
 
 .stat{
-background:#1e293b;
-padding:20px;
+background:white;
+padding:30px;
 border-radius:20px;
+text-align:center;
+box-shadow:0 5px 25px rgba(0,0,0,.08);
+}
+
+.stat h2{
+font-size:38px;
+color:var(--azul);
+margin-bottom:8px;
+}
+
+/* Títulos */
+
+.section-title{
+font-size:36px;
+color:var(--azul);
+margin-bottom:30px;
+}
+
+/* Proyecto */
+
+.project{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+margin-top:40px;
+}
+
+.project-image img{
+width:100%;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.project-card{
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 5px 25px rgba(0,0,0,.08);
+}
+
+.project-card h3{
+font-size:32px;
+margin-bottom:20px;
+color:var(--azul);
+}
+
+.badge{
+display:inline-block;
+background:#eef4ff;
+padding:8px 14px;
+border-radius:20px;
+margin-right:8px;
+margin-bottom:15px;
+font-size:13px;
+font-weight:600;
+color:var(--azul);
+}
+
+.project-card p{
+line-height:1.8;
+margin-bottom:25px;
+}
+
+.action{
+display:inline-block;
+padding:12px 24px;
+text-decoration:none;
+border-radius:10px;
+margin-right:10px;
+font-weight:bold;
+}
+
+.action-blue{
+background:var(--azul);
+color:white;
+}
+
+.action-orange{
+background:var(--naranjo);
+color:white;
+}
+
+/* Mapa */
+
+.mapa{
+margin-top:60px;
+background:white;
+padding:40px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 25px rgba(0,0,0,.08);
+}
+
+.mapa h3{
+color:var(--azul);
+margin-bottom:15px;
+}
+
+/* Footer */
+
+footer{
+margin-top:80px;
+background:var(--azul);
+color:white;
+padding:40px;
 text-align:center;
 }
 
-footer{
-text-align:center;
-padding:30px;
-background:#020617;
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:42px;
 }
+
+.hero p{
+font-size:18px;
+}
+
+.project{
+grid-template-columns:1fr;
+}
+
+.menu{
+display:none;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
-<header>
+<nav>
+
+assets/logo-chilquinta.jpg
+
+<div class="menu">
+#Inicio</a>
+#proyectosProyectos</a>
+#mapaMapa</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
 <h1>TX Digital Twin</h1>
-<p class="subtitle">
-Portal de Gemelos Digitales Chilquinta
+
+<p>
+Portal corporativo para la visualización de activos,
+instalaciones e infraestructura digitalizada mediante
+tecnología Lixel CyberColor y visores XGRIDS.
 </p>
-</header>
+
+#proyectos
+Explorar Proyectos
+</a>
+
+<a class="btn btn-secondary"
+href="https://lcc-viewer.xgrids.com/pub/dbhtkr-chilquinta"
+target="_blank">
+Abrir Visor LCC
+</a>
+
+</div>
+
+</section>
 
 <div class="container">
 
-<section class="section">
-
 <div class="stats">
+
 <div class="stat">
 <h2>1</h2>
 <p>Proyecto Publicado</p>
@@ -103,31 +325,80 @@ Portal de Gemelos Digitales Chilquinta
 
 <div class="stat">
 <h2>1</h2>
-<p>Región</p>
+<p>Región Activa</p>
 </div>
 
 <div class="stat">
-<h2>1</h2>
-<p>Visor LCC</p>
+<h2>LCC2</h2>
+<p>Tecnología</p>
 </div>
+
+<div class="stat">
+<h2>Online</h2>
+<p>Estado Plataforma</p>
+</div>
+
+</div>
+
+<section id="proyectos">
+
+<h2 class="section-title">
+Proyecto Destacado
+</h2>
+
+<div class="project">
+
+<div class="project-image">
+assets/baron.JPG
+</div>
+
+<div class="project-card">
+
+<h3>Instalación Edificio Barón</h3>
+
+<div>
+<span class="badge">Valparaíso</span>
+<span class="badge">Lixel CyberColor</span>
+<span class="badge">LCC2</span>
+</div>
+
+<p>
+Primer gemelo digital publicado dentro del portal
+TX Digital Twin. El proyecto permite acceder al
+modelo generado mediante Lixel y visualizarlo
+en la plataforma XGRIDS.
+</p>
+
+baron.html
+Ver Proyecto
+</a>
+
+<a class="action action-orange"
+href="https://lcc-viewer.xgrids.com/pub/dbhtkr-chilquinta"
+target="_blank">
+Abrir Digital Twin
+</a>
+
+</div>
+
 </div>
 
 </section>
 
-<section class="section">
+<section id="mapa">
 
-<h2>Proyectos</h2>
+<div class="mapa">
 
-<div class="card">
-
-<h3>Instalación Edificio Barón</h3>
+<h3>Mapa Nacional de Activos</h3>
 
 <p>
-Región de Valparaíso
+Próximamente se incorporarán filtros regionales,
+búsqueda geográfica y visualización de instalaciones.
 </p>
 
-<a class="button"
-href="</a>
+<br>
+
+<h2>📍 Región de Valparaíso</h2>
 
 </div>
 
@@ -136,7 +407,17 @@ href="</a>
 </div>
 
 <footer>
-TX Digital Twin © 2026
+
+<h3>TX Digital Twin</h3>
+
+<p>
+Chilquinta Transmisión
+</p>
+
+<p>
+Portal Corporativo de Gemelos Digitales
+</p>
+
 </footer>
 
 </body>
