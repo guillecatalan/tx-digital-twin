@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TX Digital Twin | Chilquinta</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<style>
+
+:root{
+    --azul:#003B71;
+    --naranjo:#F58220;
+    --gris:#f5f7fa;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI,Arial,sans-serif;
+    background:var(--gris);
+}
+
+header{
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.nav{
+    max-width:1400px;
+    margin:auto;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.brand img{
+    height:55px;
+}
+
+.brand-text h3{
+    color:#003B71;
+}
+
+.brand-text span{
+    font-size:12px;
+    color:#777;
+}
+
+.menu a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#003B71;
+    font-weight:600;
+}
+
+.hero{
+    height:650px;
+    background:
+    linear-gradient(rgba(0,59,113,.7),rgba(0,59,113,.7)),
+    url('assets/baron.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:68px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:24px;
+    line-height:1.6;
+}
+
+.hero-btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#F58220;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.container{
+    max-width:1400px;
+    margin:auto;
+    padding:60px 30px;
+}
+
+.section-title{
+    color:#003B71;
+    margin-bottom:30px;
+    font-size:34px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.project{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.project img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.info{
+    padding:40px;
+}
+
+.info h2{
+    color:#003B71;
+    margin-bottom:15px;
+}
+
+.badge{
+    display:inline-block;
+    background:#EDF4FF;
+    color:#003B71;
+    padding:8px 14px;
+    border-radius:20px;
+    margin-right:8px;
+}
+
+.info p{
+    margin:25px 0;
+    line-height:1.8;
+}
+
+.btn{
+    background:#003B71;
+    color:white;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:8px;
+}
+
+#map{
+    height:500px;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+footer{
+    background:#003B71;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+}
+
+@media(max-width:900px){
+
+.project{
+    grid-template-columns:1fr;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.menu{
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="nav">
+
+<div class="brand">
+
+assets/logo-chilquinta.jpg
+
+<div class="brand-text">
+<h3>TX Digital Twin</h3>
+<span>Portal Corporativo</span>
+</div>
+
+</div>
+
+<div class="menu">
+#Inicio</a>
+#proyectosProyectos</a>
+#mapaMapa</a>
+</div>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>TX Digital Twin</h1>
+
+<p>
+Portal corporativo para la visualización de
+instalaciones, infraestructura y activos digitales.
+</p>
+
+#proyectos
+Ver Proyecto
+</a>
+
+</div>
+
+</section>
+
+<div class="container">
+
+<h2 id="proyectos" class="section-title">
+Proyecto Destacado
+</h2>
+
+<div class="card">
+
+<div class="project">
+
+assets/baron.jpg
+
+<div class="info">
+
+<h2>Instalación Edificio Barón</h2>
+
+<span class="badge">Valparaíso</span>
+<span class="badge">Disponible</span>
+
+<p>
+Gemelo digital de la instalación Edificio Barón
+publicado para consulta y visualización.
+</p>
+
+<a href="baron.html" class="btn">
+Ver Proyecto
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<h2 id=
