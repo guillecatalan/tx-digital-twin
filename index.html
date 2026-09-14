@@ -633,7 +633,8 @@
     }
 
     function saveProjects(){
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(projects));
+      const cleanProjects = projects.map(({_marker, ...p}) => p);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(cleanProjects));
     }
 
     function escapeHtml(value=""){
