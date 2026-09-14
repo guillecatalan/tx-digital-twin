@@ -917,9 +917,17 @@
 
     document.getElementById("saveAll").onclick=()=>{
       collectEditor();
-      saveProjects();
+      const cleanProjects = projects.map(p => ({
+        ...p,
+        _marker: undefined
+        }));
+        localStorage.setItem(
+          STORAGE_KEY,
+          JSON.stringify(cleanProjects)
+        );
       renderAll();
-      document.getElementById("adminModal").classList.remove("open");
+      document.getElementById("adminModal")
+        .classList.remove("open");
       toast("Cambios guardados correctamente.");
     };
 
