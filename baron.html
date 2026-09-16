@@ -14,7 +14,7 @@
 </main><footer><div class="foot"><div><strong>TX Digital Twin · Chilquinta</strong><br>Plataforma de consulta de instalaciones y activos digitales.</div><div>Proyecto TXDT-001 · Instalación Edificio Barón</div></div></footer>
 <script>
 // Pega aquí la URL pública real de tu visor LCC / XGRIDS.
-const VIEWER_URL = "";
+const VIEWER_URL = "https://lcc-viewer.xgrids.com/pub/dbhtkr-chilquinta";
 const viewerButton = document.getElementById("viewerButton");
 if (VIEWER_URL.trim()) { viewerButton.href = VIEWER_URL; viewerButton.target = "_blank"; viewerButton.rel = "noopener"; }
 else { viewerButton.addEventListener("click", event => { event.preventDefault(); alert("El visor 3D aún no está conectado. Configura VIEWER_URL al final de baron.html."); }); }
