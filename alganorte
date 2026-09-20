@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Instalación Subestacion Algarrobo Norte | TX Digital Twin</title>
+<style>
+:root{--navy:#073b66;--blue:#0b79c9;--ink:#17324d;--muted:#65788a;--line:#dbe5ed;--bg:#f5f8fb}*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--ink)}a{text-decoration:none;color:inherit}.top{height:5px;background:linear-gradient(90deg,#0a4d84,#0c82d2,#18b6e8)}header{position:sticky;top:0;background:#ffffffed;border-bottom:1px solid var(--line);z-index:5;backdrop-filter:blur(10px)}.nav{max-width:1200px;margin:auto;padding:15px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:13px}.brand img{width:140px;height:42px;object-fit:contain}.brand b{border-left:1px solid var(--line);padding-left:13px;color:var(--navy);font-size:14px}.navlinks{display:flex;gap:18px;font-size:13px;font-weight:700;color:#526b7e}.back,.btn{display:inline-block;border-radius:10px;padding:11px 15px;font-size:13px;font-weight:800}.back{border:1px solid #d2e2ed;background:#f4f9fc;color:var(--navy)}main{max-width:1200px;margin:auto;padding:24px}.crumb{font-size:13px;color:#7b8d9c;margin:4px 0 18px}.crumb a{color:var(--blue);font-weight:700}.hero{display:grid;grid-template-columns:1.1fr .9fr;overflow:hidden;border-radius:24px;background:linear-gradient(120deg,#06345b,#07578c 60%,#0a76b7);color:white;box-shadow:0 16px 45px #11345219}.copy{padding:48px;align-self:center}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#a9e4ff;font-weight:850}.hero h1{font-size:clamp(34px,4.5vw,56px);line-height:1;letter-spacing:-.04em;margin:17px 0}.hero p{font-size:15px;line-height:1.7;color:#d4e7f4;max-width:580px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.white{background:white;color:var(--navy)}.outline{border:1px solid #ffffff60;color:white;background:#ffffff12}.art{display:grid;place-items:center;min-height:330px;background:radial-gradient(circle at 70% 25%,#5dc8f544,transparent 40%),#06385e;position:relative}.art:before{content:"";position:absolute;width:310px;height:310px;border:1px solid #ffffff25;border-radius:50%;box-shadow:0 0 0 45px #ffffff08,0 0 0 90px #ffffff05}.artcard{position:relative;width:min(330px,85%);padding:24px;border:1px solid #ffffff40;border-radius:20px;background:#ffffff12;backdrop-filter:blur(8px)}.artcard .emoji{font-size:42px}.artcard h3{margin:12px 0 5px}.artcard p{font-size:12px;color:#cce4f3;line-height:1.6}.chips{display:flex;gap:7px;flex-wrap:wrap}.chip{font-size:10px;border:1px solid #ffffff45;border-radius:99px;padding:6px 9px;font-weight:800}.section{padding-top:40px}.kicker{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);font-weight:850}h2{font-size:28px;letter-spacing:-.025em;margin:6px 0}.sub{font-size:13px;color:var(--muted);line-height:1.6}.specs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.spec,.panel{background:white;border:1px solid var(--line);border-radius:15px;padding:20px;box-shadow:0 8px 24px #11345208}.spec label{font-size:11px;color:var(--muted);font-weight:800;text-transform:uppercase}.spec strong{display:block;color:var(--navy);font-size:16px;margin-top:7px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.panel h3{font-size:15px;color:var(--navy);margin:0 0 10px}.panel p{font-size:13px;line-height:1.65;color:var(--muted);margin:0}.icon{width:38px;height:38px;display:grid;place-items:center;background:#eaf6fd;color:var(--blue);border-radius:11px;font-size:20px;margin-bottom:14px}.viewer{display:grid;grid-template-columns:1fr;gap:15px}.viewerbox{min-height:320px;border-radius:18px;background:linear-gradient(135deg,#082f51,#07578c);color:white;display:grid;place-items:center;text-align:center;padding:30px;position:relative;overflow:hidden}.viewerbox:before{content:"";position:absolute;width:400px;height:400px;border:1px solid #ffffff20;border-radius:50%;box-shadow:0 0 0 55px #ffffff08,0 0 0 110px #ffffff05}.viewercontent{position:relative;max-width:520px}.viewercontent .symbol{font-size:45px}.viewercontent h3{font-size:23px;margin:10px}.viewercontent p{font-size:13px;line-height:1.6;color:#c6dceb}.side{display:flex;flex-direction:column;gap:12px}.side .panel{flex:1}.notice{background:#fff8e9;border:1px solid #f2dfb5;border-radius:12px;padding:13px;font-size:12px;line-height:1.55;color:#80612b}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.galleryitem{height:185px;border:1px dashed #c5d8e5;border-radius:15px;background:linear-gradient(145deg,#eef7fc,#f9fbfd);display:grid;place-items:center;text-align:center;padding:15px;color:#7a96aa}.galleryitem b{color:var(--navy)}.mapgrid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.mapbox{min-height:230px;border-radius:15px;background:linear-gradient(135deg,#eaf5fb,#dcecf6);display:grid;place-items:center;text-align:center;padding:20px;color:#6c8da4;border:1px solid #d4e5ef}.mapbox strong{display:block;color:var(--navy);font-size:18px;margin-bottom:8px}footer{margin-top:55px;background:#062f52;color:#c8d8e6;padding:28px 24px}.foot{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:20px;font-size:12px;line-height:1.5}.foot strong{color:white}.qr{display:block;width:172px;margin:18px 0 16px;background:white;border-radius:14px;padding:12px 12px 9px;box-shadow:0 8px 20px #00000030}.qr svg{display:block;width:100%;height:auto}.qr span{display:block;text-align:center;font-size:10px;font-weight:800;color:var(--navy);margin-top:8px;line-height:1.3}.qr:focus-visible{outline:3px solid #a9e4ff;outline-offset:3px}.galleryitem{position:relative;overflow:hidden;cursor:pointer}.galleryitem img{display:none;width:100%;height:100%;object-fit:cover;border-radius:14px}.galleryitem.filled{border-style:solid;border-color:var(--line);background:#fff;padding:0}.galleryitem.filled img{display:block}.galleryitem.filled .ph{display:none}.galleryitem .rm{display:none;position:absolute;top:9px;right:9px;border:0;border-radius:9px;padding:6px 9px;background:#073b66d9;color:white;font-size:12px;font-weight:800;cursor:pointer}.galleryitem.filled .rm{display:block}.galleryitem:focus-within{border-color:var(--blue)}.mapbox.map{display:block;padding:0;overflow:hidden}.mapbox.map iframe{display:block;width:100%;height:100%;min-height:260px;border:0}@media(max-width:850px){.hero{grid-template-columns:1fr}.art{min-height:250px}.specs{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.viewer{grid-template-columns:1fr}.mapgrid{grid-template-columns:1fr}}@media(max-width:600px){.nav{padding:12px 15px}.navlinks{display:none}.brand img{width:112px}main{padding:15px}.copy{padding:32px 24px}.specs{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr}.foot{flex-direction:column}}
+</style></head><body>
+<div class="top"></div><header><div class="nav"><a class="brand" href="index.html"><img src="assets/logo-chilquinta.jpg" alt="Chilquinta" onerror="this.style.display='none'"><b>TX<br>Digital Twin</b></a><nav class="navlinks"><a href="index.html">Portafolio</a><a href="#ficha">Ficha técnica</a><a href="#visor">Visor 3D</a><a href="#ubicacion">Ubicación</a></nav><a class="back" href="index.html">← Volver a la Plataforma</a></div></header>
+<main><div class="crumb"><a href="index.html">TX Digital Twin</a>　/　Proyectos  /  Gerencia Greenfield　</div>
+<section class="hero" id="ficha"><div class="copy"><div class="eyebrow">Proyecto 01 · Gemelo digital</div><h1>Instalación<br>Subestacion Algarrobo Norte</h1><p>Activo Digital para consultar la información de la instalación, acceder a su experiencia virtual y Modelo ASBuilt.</p></div><div class="art"><div class="artcard"><div class="emoji">🏢</div><h3>Instalación Chilquinta</h3><p>Gemelo digital · Plataforma TX Digital Twin<br>Codigo QR</p><a class="qr" id="qrLink" href="#" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" shape-rendering="crispEdges"><rect width="37" height="37" fill="#fff"/><path fill="#073b66" d="M2 2h7v1h-7zM11 2h4v1h-4zM21 2h2v1h-2zM25 2h1v1h-1zM28 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM11 3h3v1h-3zM17 3h2v1h-2zM20 3h1v1h-1zM22 3h3v1h-3zM26 3h1v1h-1zM28 3h1v1h-1zM34 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM10 4h4v1h-4zM16 4h3v1h-3zM21 4h3v1h-3zM25 4h1v1h-1zM28 4h1v1h-1zM30 4h3v1h-3zM34 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM10 5h2v1h-2zM14 5h1v1h-1zM20 5h1v1h-1zM24 5h1v1h-1zM26 5h1v1h-1zM28 5h1v1h-1zM30 5h3v1h-3zM34 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM10 6h1v1h-1zM15 6h4v1h-4zM22 6h1v1h-1zM24 6h2v1h-2zM28 6h1v1h-1zM30 6h3v1h-3zM34 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM10 7h2v1h-2zM14 7h3v1h-3zM19 7h3v1h-3zM23 7h1v1h-1zM28 7h1v1h-1zM34 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h1v1h-1zM22 8h1v1h-1zM24 8h1v1h-1zM26 8h1v1h-1zM28 8h7v1h-7zM10 9h1v1h-1zM16 9h1v1h-1zM18 9h1v1h-1zM20 9h5v1h-5zM26 9h1v1h-1zM2 10h1v1h-1zM4 10h5v1h-5zM11 10h3v1h-3zM15 10h2v1h-2zM19 10h1v1h-1zM21 10h1v1h-1zM24 10h2v1h-2zM28 10h5v1h-5zM5 11h3v1h-3zM9 11h1v1h-1zM13 11h4v1h-4zM18 11h6v1h-6zM25 11h1v1h-1zM28 11h2v1h-2zM31 11h2v1h-2zM34 11h1v1h-1zM3 12h1v1h-1zM6 12h1v1h-1zM8 12h1v1h-1zM10 12h1v1h-1zM12 12h8v1h-8zM23 12h1v1h-1zM28 12h1v1h-1zM30 12h1v1h-1zM32 12h1v1h-1zM5 13h2v1h-2zM12 13h1v1h-1zM15 13h1v1h-1zM18 13h3v1h-3zM23 13h2v1h-2zM27 13h2v1h-2zM30 13h3v1h-3zM34 13h1v1h-1zM5 14h2v1h-2zM8 14h1v1h-1zM11 14h1v1h-1zM16 14h1v1h-1zM18 14h1v1h-1zM21 14h1v1h-1zM24 14h4v1h-4zM29 14h3v1h-3zM2 15h1v1h-1zM5 15h2v1h-2zM10 15h2v1h-2zM13 15h1v1h-1zM15 15h1v1h-1zM17 15h1v1h-1zM19 15h2v1h-2zM23 15h3v1h-3zM27 15h2v1h-2zM31 15h1v1h-1zM33 15h2v1h-2zM3 16h1v1h-1zM7 16h2v1h-2zM10 16h1v1h-1zM12 16h1v1h-1zM14 16h1v1h-1zM17 16h2v1h-2zM20 16h1v1h-1zM22 16h3v1h-3zM26 16h4v1h-4zM31 16h1v1h-1zM33 16h1v1h-1zM3 17h2v1h-2zM10 17h1v1h-1zM14 17h2v1h-2zM17 17h1v1h-1zM23 17h2v1h-2zM26 17h3v1h-3zM31 17h2v1h-2zM3 18h2v1h-2zM6 18h1v1h-1zM8 18h8v1h-8zM17 18h1v1h-1zM19 18h1v1h-1zM22 18h1v1h-1zM24 18h4v1h-4zM29 18h2v1h-2zM34 18h1v1h-1zM2 19h2v1h-2zM5 19h1v1h-1zM7 19h1v1h-1zM10 19h1v1h-1zM13 19h2v1h-2zM18 19h1v1h-1zM20 19h7v1h-7zM28 19h2v1h-2zM31 19h2v1h-2zM34 19h1v1h-1zM2 20h2v1h-2zM6 20h1v1h-1zM8 20h1v1h-1zM10 20h3v1h-3zM15 20h1v1h-1zM17 20h2v1h-2zM20 20h1v1h-1zM23 20h2v1h-2zM29 20h2v1h-2zM32 20h2v1h-2zM7 21h1v1h-1zM12 21h1v1h-1zM14 21h3v1h-3zM21 21h6v1h-6zM28 21h6v1h-6zM3 22h2v1h-2zM8 22h1v1h-1zM10 22h1v1h-1zM14 22h2v1h-2zM17 22h1v1h-1zM20 22h2v1h-2zM24 22h1v1h-1zM26 22h1v1h-1zM30 22h2v1h-2zM33 22h1v1h-1zM2 23h1v1h-1zM4 23h1v1h-1zM6 23h1v1h-1zM9 23h3v1h-3zM15 23h4v1h-4zM21 23h3v1h-3zM25 23h1v1h-1zM28 23h1v1h-1zM31 23h2v1h-2zM34 23h1v1h-1zM2 24h1v1h-1zM4 24h3v1h-3zM8 24h5v1h-5zM14 24h1v1h-1zM24 24h1v1h-1zM27 24h3v1h-3zM32 24h2v1h-2zM2 25h1v1h-1zM6 25h1v1h-1zM10 25h1v1h-1zM12 25h1v1h-1zM16 25h1v1h-1zM18 25h1v1h-1zM20 25h1v1h-1zM22 25h5v1h-5zM29 25h6v1h-6zM2 26h1v1h-1zM4 26h2v1h-2zM7 26h2v1h-2zM10 26h3v1h-3zM14 26h1v1h-1zM19 26h1v1h-1zM24 26h1v1h-1zM26 26h5v1h-5zM10 27h3v1h-3zM14 27h1v1h-1zM18 27h2v1h-2zM21 27h1v1h-1zM26 27h1v1h-1zM30 27h1v1h-1zM32 27h3v1h-3zM2 28h7v1h-7zM11 28h1v1h-1zM13 28h1v1h-1zM15 28h3v1h-3zM19 28h1v1h-1zM23 28h1v1h-1zM25 28h2v1h-2zM28 28h1v1h-1zM30 28h1v1h-1zM32 28h2v1h-2zM2 29h1v1h-1zM8 29h1v1h-1zM10 29h1v1h-1zM12 29h1v1h-1zM16 29h1v1h-1zM18 29h4v1h-4zM23 29h4v1h-4zM30 29h3v1h-3zM2 30h1v1h-1zM4 30h3v1h-3zM8 30h1v1h-1zM10 30h2v1h-2zM14 30h2v1h-2zM18 30h1v1h-1zM22 30h1v1h-1zM24 30h1v1h-1zM26 30h6v1h-6zM2 31h1v1h-1zM4 31h3v1h-3zM8 31h1v1h-1zM10 31h1v1h-1zM13 31h1v1h-1zM15 31h3v1h-3zM20 31h4v1h-4zM25 31h1v1h-1zM27 31h1v1h-1zM30 31h1v1h-1zM32 31h3v1h-3zM2 32h1v1h-1zM4 32h3v1h-3zM8 32h1v1h-1zM10 32h4v1h-4zM16 32h5v1h-5zM23 32h2v1h-2zM26 32h1v1h-1zM28 32h2v1h-2zM2 33h1v1h-1zM8 33h1v1h-1zM17 33h1v1h-1zM21 33h4v1h-4zM27 33h2v1h-2zM30 33h3v1h-3zM2 34h7v1h-7zM10 34h1v1h-1zM14 34h1v1h-1zM17 34h1v1h-1zM19 34h4v1h-4zM24 34h4v1h-4zM29 34h1v1h-1zM33 34h1v1h-1z"/></svg><span>Escanea el código para abrir la experiencia 3D</span></a><div class="chips"><span class="chip">LCC</span><span class="chip">3D</span><span class="chip">Digital Twin</span></div></div></div></section>
+<section class="section"><div class="kicker">Resumen</div><h2>Información del proyecto</h2><p class="sub">Datos generales de la instalación.</p><div class="specs"><div class="spec"><label>Identificador</label><strong>TXDT-004</strong></div><div class="spec"><label>Instalación</label><strong>Subestación</strong></div><div class="spec"><label>Comuna</label><strong>Algarrobo</strong></div><div class="spec"><label>Estado</label><strong style="color:#0c9b68">Disponible</strong></div></div></section>
+<section class="section" id="visor"><div class="kicker">Visualización</div><h2>Visor del gemelo digital</h2><p class="sub">Acceso a la experiencia 3D de la instalación.</p><div class="viewer"><div class="viewerbox"><div class="viewercontent"><div class="symbol">◉</div><h3>Visor 3D</h3><p></p>Espacio preparado para conectar con el visor online </p><a class="btn white" id="viewerButton" href="#">Abrir experiencia 3D ↗</a></div></div></div></section>
+<section class="section" id="galeria"><div class="kicker">Recursos visuales</div><h2>Galería del proyecto</h2><p class="sub">Imagenes referenciales del Activo.</p><div class="gallery" id="gallery"><label class="galleryitem" data-slot="vista-general"><input type="file" accept="image/*" hidden><div class="ph">＋<br><b>Vista general</b><br><small>Haz clic para subir una imagen</small></div><img alt="Vista general"><button type="button" class="rm" title="Quitar imagen">✕</button></label><label class="galleryitem" data-slot="detalle"><input type="file" accept="image/*" hidden><div class="ph">＋<br><b>Detalle de instalación</b><br><small>Haz clic para subir una imagen</small></div><img alt="Detalle de instalación"><button type="button" class="rm" title="Quitar imagen">✕</button></label><label class="galleryitem" data-slot="gemelo"><input type="file" accept="image/*" hidden><div class="ph">＋<br><b>Captura del gemelo digital</b><br><small>Haz clic para subir una imagen</small></div><img alt="Captura del gemelo digital"><button type="button" class="rm" title="Quitar imagen">✕</button></label></div></section>
+<section class="section" id="ubicacion"><div class="kicker">Georreferencia</div><h2>Ubicación del proyecto</h2><p class="sub">Referencia geográfica aproximada.</p><div class="mapgrid"><div class="panel"><h3>Subestación Algarrobo Norte · Algarrobo</h3><p>Coordenadas de referencia: <b>-33.338804, -71.644361</b>.</p><p style="margin-top:12px">La posición debe verificarse con las coordenadas oficiales de la instalación antes de utilizarla para navegación o trabajos técnicos.</p><a class="btn" style="margin-top:18px;background:#eef6fc;color:var(--navy)" href="https://www.openstreetmap.org/?mlat=-33.338804&mlon=-71.644361#map=16/-33.338804/-71.644361" target="_blank" rel="noopener">Abrir mapa externo ↗</a></div><div class="mapbox map"><iframe title="Mapa Subestacion Algarrobo Norte, Algarrobo" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-71.644361%2C-33.338804%2C-71.644361%2C-33.338804&amp;layer=mapnik&amp;marker=-33.338804%2C-71.644361"></iframe></div></div></section>
+</main><footer><div class="foot"><div><strong>TX Digital Twin · Chilquinta</strong><br>Plataforma de consulta de instalaciones y activos digitales.</div><div>Unidad de Ingeniería Digital</div></div></footer>
+<script>
+// URL pública del visor LCC / XGRIDS. El botón y el código QR apuntan a esta misma dirección.
+const VIEWER_URL = "https://lcc-viewer.xgrids.com/pub/dbhtkr-alganorte";
+
+const viewerButton = document.getElementById("viewerButton");
+const qrLink = document.getElementById("qrLink");
+
+if (VIEWER_URL.trim()) {
+  [viewerButton, qrLink].forEach(el => {
+    if (!el) return;
+    el.href = VIEWER_URL;
+    el.target = "_blank";
+    el.rel = "noopener";
+  });
+} else {
+  [viewerButton, qrLink].forEach(el => {
+    if (!el) return;
+    el.addEventListener("click", event => {
+      event.preventDefault();
+      alert("El visor 3D aún no está conectado. Configura VIEWER_URL al final de baron.html.");
+    });
+  });
+}
+
+/* ---- Galería: cargar imágenes desde el computador ---- */
+const STORE_PREFIX = "txdt-baron-img-";
+const MAX_SIDE = 1400;
+
+function storageGet(key) {
+  try { return localStorage.getItem(key); } catch (e) { return null; }
+}
+function storageSet(key, value) {
+  try { localStorage.setItem(key, value); } catch (e) { /* sin espacio o sin permiso */ }
+}
+function storageRemove(key) {
+  try { localStorage.removeItem(key); } catch (e) {}
+}
+
+function showImage(item, dataUrl) {
+  item.querySelector("img").src = dataUrl;
+  item.classList.add("filled");
+}
+function clearImage(item) {
+  const img = item.querySelector("img");
+  img.removeAttribute("src");
+  item.classList.remove("filled");
+  item.querySelector("input").value = "";
+}
+
+function readAndResize(file, done) {
+  const reader = new FileReader();
+  reader.onload = () => {
+    const img = new Image();
+    img.onload = () => {
+      const scale = Math.min(1, MAX_SIDE / Math.max(img.width, img.height));
+      const canvas = document.createElement("canvas");
+      canvas.width = Math.round(img.width * scale);
+      canvas.height = Math.round(img.height * scale);
+      canvas.getContext("2d").drawImage(img, 0, 0, canvas.width, canvas.height);
+      try { done(canvas.toDataURL("image/jpeg", 0.85)); }
+      catch (e) { done(reader.result); }
+    };
+    img.onerror = () => done(reader.result);
+    img.src = reader.result;
+  };
+  reader.readAsDataURL(file);
+}
+
+document.querySelectorAll(".galleryitem").forEach(item => {
+  const key = STORE_PREFIX + item.dataset.slot;
+  const saved = storageGet(key);
+  if (saved) showImage(item, saved);
+
+  item.querySelector("input").addEventListener("change", event => {
+    const file = event.target.files && event.target.files[0];
+    if (!file) return;
+    readAndResize(file, dataUrl => {
+      showImage(item, dataUrl);
+      storageSet(key, dataUrl);
+    });
+  });
+
+  item.querySelector(".rm").addEventListener("click", event => {
+    event.preventDefault();
+    event.stopPropagation();
+    clearImage(item);
+    storageRemove(key);
+  });
+});
+</script></body></html>
+
+
+
